@@ -4,6 +4,7 @@ import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.julio.mccourse.MCCourseMod;
+import net.julio.mccourse.block.ModBlocks;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
 import net.minecraft.registry.Registries;
@@ -22,6 +23,8 @@ public class ModItems {
 
     private static  void itemGroupIngredients (FabricItemGroupEntries entries){
         entries.add(JOJACOLA);
+
+        entries.add(ModBlocks.BROWNBLOCK);
     }
 
     public static void registerModUItems(){
